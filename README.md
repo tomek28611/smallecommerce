@@ -1,3 +1,35 @@
+
+# Small Ecommerce
+
+## Next js application using mongodb and cloudinary.
+
+1. List of all products with pagination.
+
+2. Filtering products by:
+- keywords
+- product price
+- product category
+- product rating
+
+3. User and administrator login and registration
+## User can:
+
+- add multiple shipping addresses, edit, delete.
+- edit their data and avatar
+- see their orders
+- change password
+
+## Administrator can:
+- everything a user can do
+- add, edit and delete products
+- has control over users and orders
+
+4. Shopping cart
+- you can add and delete products (counts or subtracts the amount to be paid)
+5. Shipping info and checkout
+- you can enter an address but further actions are not available because this is only a test store
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
