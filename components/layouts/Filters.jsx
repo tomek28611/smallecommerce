@@ -96,6 +96,7 @@ const Filters = () => {
 
           <div className="mb-4">
             <button
+              name="min-max-price"
               className="px-1 py-2 text-center w-full inline-block text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700"
               onClick={handleButtonClick}
             >
@@ -112,6 +113,7 @@ const Filters = () => {
           <li>
             <label className="flex items-center">
               <input
+                id="Electronics"
                 name="category"
                 type="checkbox"
                 value="Electronics"
@@ -125,6 +127,7 @@ const Filters = () => {
           <li>
             <label className="flex items-center">
               <input
+                id="Laptops"
                 name="category"
                 type="checkbox"
                 value="Laptops"
@@ -138,6 +141,7 @@ const Filters = () => {
           <li>
             <label className="flex items-center">
               <input
+                id="Toys"
                 name="category"
                 type="checkbox"
                 value="Toys"

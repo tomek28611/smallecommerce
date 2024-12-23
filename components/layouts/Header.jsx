@@ -40,6 +40,7 @@ const Header = () => {
 
           <div className="flex items-center space-x-2 ml-auto">
             <Link
+              data-test='open-cart'
               href="/cart"
               className="px-3 py-2 inline-block text-center text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300"
             >
@@ -50,6 +51,7 @@ const Header = () => {
             </Link>
             {!user ? (
               <Link
+                data-test='open-accountPage'
                 href="/login"
                 className="px-3 py-2 inline-block text-center text-gray-700 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 hover:border-gray-300"
               >

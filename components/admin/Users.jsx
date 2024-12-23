@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useContext, useEffect } from "react";
 import CustomPagination from "../layouts/CustomPagination";
 import AuthContext from "@/context/AuthContext";
+import { toast } from "react-toastify"; // Upewnij się, że zaimportowałeś toast
 
 const Users = ({ data }) => {
   const { error, deleteUser, clearErrors } = useContext(AuthContext);
@@ -15,8 +16,9 @@ const Users = ({ data }) => {
     }
   }, [error]);
 
-  const deleteHandler = (id) => {
-    deleteUser(id);
+  const deleteHandler = (id, email) => {
+    deleteUser(id); 
+    toast.success(`User was successfully deleted!`); 
   };
 
   return (
@@ -57,7 +59,7 @@ const Users = ({ data }) => {
                   </Link>
                   <a
                     className="px-2 py-2 inline-block text-red-600 bg-white shadow-sm border border-gray-200 rounded-md hover:bg-gray-100 cursor-pointer"
-                    onClick={() => deleteHandler(user?._id)}
+                    onClick={() => deleteHandler(user?._id, user?.email)} 
                   >
                     <i className="fa fa-trash" aria-hidden="true"></i>
                   </a>

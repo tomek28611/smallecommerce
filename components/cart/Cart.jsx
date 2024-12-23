@@ -155,12 +155,13 @@ const Cart = () => {
                     </li>
                   </ul>
 
-                  <a
+                  <button
+                    data-test="continue-to-checkout-button"
                     className="px-4 py-3 mb-2 inline-block text-lg w-full text-center font-medium text-white bg-green-600 border border-transparent rounded-md hover:bg-green-700 cursor-pointer"
                     onClick={checkoutHandler}
                   >
                     Continue
-                  </a>
+                  </button>
 
                   <Link
                     href="/"
